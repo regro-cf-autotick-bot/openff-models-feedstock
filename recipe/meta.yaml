@@ -1,5 +1,5 @@
 {% set name = "openff-models" %}
-{% set version = "0.0.0" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,7 +24,8 @@ requirements:
     - pydantic <2.0.0a0
     - openff-units
     - openff-utilities
-    - openmm
+  run_constrained:
+    - openmm >=7.6
 
 test:
   imports:
