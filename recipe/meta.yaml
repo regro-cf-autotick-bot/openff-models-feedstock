@@ -1,5 +1,5 @@
 {% set name = "openff-models" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-models/archive/{{ version }}.tar.gz
-  sha256: 7034901acd09363d2e445bd6340905c049a9d4f8aceb80c0708a98bffb84e661
+  sha256: ecdaf08f84708f5e5ffac4229d2af5fa52b2c901bb674ab415250ac05832b6f7
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
     - python
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy
     - pydantic <2.0.0a0
     - openff-units

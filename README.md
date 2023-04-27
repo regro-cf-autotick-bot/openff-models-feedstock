@@ -1,11 +1,11 @@
-About openff-models
-===================
+About openff-models-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-models-feedstock/blob/main/LICENSE.txt)
 
 Home: https://openforcefield.org/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-models-feedstock/blob/main/LICENSE.txt)
 
 Summary: Helper classes for Pydantic compatibility in the OpenFF stack
 
