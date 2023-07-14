@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,8 +20,8 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - numpy
-    - pydantic <2.0.0a0
+    - numpy =1
+    - pydantic =1
     - openff-units
     - openff-utilities
   run_constrained:
