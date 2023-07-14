@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-models/archive/{{ version }}.tar.gz
-  sha256: ecdaf08f84708f5e5ffac4229d2af5fa52b2c901bb674ab415250ac05832b6f7
+  sha256: c0f40fc2027c605fb164edb4ae6a38f720abc5177e95acfbc967598cd34ac1d3
 
 build:
   noarch: python
