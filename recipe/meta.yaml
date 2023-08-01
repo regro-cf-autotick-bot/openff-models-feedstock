@@ -1,5 +1,5 @@
 {% set name = "openff-models" %}
-{% set version = "0.0.5" %}
+{% set version = "0.1.0beta0" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.9
     - numpy =1
-    - pydantic >=1.8.2,<1.10.12
+    - pydantic >=1.8.2
     - openff-units
     - openff-utilities
   run_constrained:
