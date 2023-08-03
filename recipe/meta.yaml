@@ -30,6 +30,11 @@ requirements:
 test:
   imports:
     - openff.models
+  files:
+    - test_openff_models.py
+  commands:
+    - python test_openff_models.py
+
 
 about:
   home: https://openforcefield.org/
