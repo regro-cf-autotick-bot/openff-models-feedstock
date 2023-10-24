@@ -1,5 +1,5 @@
 {% set name = "openff-models" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-models/archive/{{ version }}.tar.gz
-  sha256: a8c79cf74631d8b94f626c3b294d1d978e80d810af9d106a5109b33a6c424a43
+  sha256: 9e7c8b5b5840ec5cf540877830252db197cfdd08354780c500f7d345276eca39
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
